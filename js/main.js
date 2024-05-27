@@ -1,5 +1,7 @@
-import searchBar from "./searchBar.js";
+import { SearchBar } from "./searchBar.js";
+import { SlideTextAnimation } from "./slideTextAnimation.js";
 
+let newSearchBar = new SearchBar().search();
+let newSlideTextAnimation = new SlideTextAnimation().animation();
 
-
-const containerMain = document.getElementById('container-main');
+setInterval(newSlideTextAnimation, 2000);
