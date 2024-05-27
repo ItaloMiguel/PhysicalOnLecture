@@ -1,4 +1,4 @@
-export class SearchBar {
+class SearchBar {
     search() {
         document.addEventListener('DOMContentLoaded', (event) => {
             const formSearch = document.getElementById('formSearch');
@@ -12,3 +12,5 @@ export class SearchBar {
         });    
     }
 }
+ 
+export default new SearchBar().search();;
