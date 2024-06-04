@@ -1,3 +1,5 @@
+import createSlide from './slideFactory.js';
+
 export default document.addEventListener('DOMContentLoaded', function () {
     const slidesData = [
         { title: 'Título 1', text: 'Texto do slide 1', link: 'https://example.com/1' },
@@ -8,22 +10,7 @@ export default document.addEventListener('DOMContentLoaded', function () {
     const container = document.getElementById('carousel-slides');
     
     slidesData.forEach(slideData => {
-        const slide = document.createElement('div');
-        slide.classList.add('carousel-slide');
-        
-        const title = document.createElement('h2');
-        title.textContent = slideData.title;
-
-        const text = document.createElement('p');
-        text.textContent = slideData.text;
-        
-        const link = document.createElement('a');
-        link.href = slideData.link;
-        link.textContent = 'Leia mais';
-
-        slide.appendChild(title);
-        slide.appendChild(text);
-        slide.appendChild(link);
+        const slide = createSlide(slideData);
         container.appendChild(slide);
     });
 

@@ -1,2 +1,2 @@
-import carousel from "./carousel.js";
+import carousel from "./carousel/carousel.js";
 
