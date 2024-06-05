@@ -1,4 +1,4 @@
-export default function createSlide(slideData) {
+export function createSlide(slideData) {
     const slide = document.createElement('div');
     slide.classList.add('carousel-slide');
     
