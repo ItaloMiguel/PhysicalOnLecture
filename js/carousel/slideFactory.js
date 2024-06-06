@@ -10,7 +10,8 @@ export default function createSlide(slideData) {
     
     const link = document.createElement('a');
     link.href = slideData.link;
-    link.textContent = 'Leia mais';
+    link.textContent = 'leia mais';
+    link.target = '_blank';
 
     slide.appendChild(title);
     slide.appendChild(text);
