@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .container {
+    /* Coisas gerais sobre os textos */
+    font-family: "Poppins", sans-serif;
+    color: white;
 
     /* Centralizar todas divs */
     width: 100vw;
@@ -8,21 +13,23 @@
     align-items: center;
 
     /* Coloração */
-    background-color: gray;
-}
-
-.main-header, .main-container, .main-footer, .presentation-banner {
-    width: 80vw;
 }
 
 .main-header {
     display: flex;
+
+    width: 100vw;
+    height: 5vh;
+
     justify-content: space-around;
+    background-color: #322e2f;
 }
 
 .header-left {
-    background-color: blueviolet;
+    display: flex;
     justify-content: space-between;
+
+    
 }
 
 .header-right {
@@ -30,9 +37,25 @@
 }
 
 .presentation-banner {
-    background-color: antiquewhite;
+    width: 80vw;
+    overflow: hidden;
+
+}
+
+.carousel-container {
+    
+}
+
+.carousel-slides {
+    align-items: center;
+    background-color: #322e2f;
+    
+}
+
+.carousel-slideBox {
+    width: 50vw;
 }
 
 .main-container {
-    background-color: antiquewhite;
+    background-color: white;
 }

@@ -2,6 +2,11 @@ export default function createSlide(slideData) {
     const slide = document.createElement('div');
     slide.classList.add('carousel-slide');
     
+    // Se remover essa div, o botão de volta some.
+    const slideBox = document.createElement('div');
+    slideBox.classList.add('carousel-slideBox');
+    slideBox.style.backgroundColor = slideData.backgroundColor
+
     const title = document.createElement('h2');
     title.textContent = slideData.title;
 
@@ -13,9 +18,11 @@ export default function createSlide(slideData) {
     link.textContent = 'leia mais';
     link.target = '_blank';
 
-    slide.appendChild(title);
-    slide.appendChild(text);
-    slide.appendChild(link);
+    slideBox.appendChild(title);
+    slideBox.appendChild(text);
+    slideBox.appendChild(link);
     
+    slide.appendChild(slideBox);
+
     return slide;
 }

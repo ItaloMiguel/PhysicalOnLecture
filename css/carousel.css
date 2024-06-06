@@ -29,9 +29,11 @@
 }
 
 .prevBtn {
-    left: 0;
+    left: 10px;
+
 }
 
 .nextBtn {
-    right: 0;
+    right: 10px;
+    
 }
