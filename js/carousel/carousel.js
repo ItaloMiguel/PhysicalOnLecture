@@ -1,4 +1,5 @@
-import createSlide from './slideFactory.js';
+import  createSlide  from './slideFactory.js';
+import  setupNavigation  from './navigation.js';
 
 export default document.addEventListener('DOMContentLoaded', function () {
     const slidesData = [
@@ -14,30 +15,9 @@ export default document.addEventListener('DOMContentLoaded', function () {
         container.appendChild(slide);
     });
 
+    const slides = document.querySelectorAll('.carousel-slide');
     const prevButton = document.getElementById('prevBtn');
     const nextButton = document.getElementById('nextBtn');
-    let currentIndex = 0;
 
-    function showSlide(index) {
-        if (index >= slidesData.length) {
-            currentIndex = 0;
-        } else if (index < 0) {
-            currentIndex = slidesData.length - 1;
-        } else {
-            currentIndex = index;
-        }
-        const offset = -currentIndex * 100;
-        container.style.transform = `translateX(${offset}%)`;
-    }
-
-    prevButton.addEventListener('click', function () {
-        showSlide(currentIndex - 1);
-    });
-
-    nextButton.addEventListener('click', function () {
-        showSlide(currentIndex + 1);
-    });
-
-    // Mostra o slide inicial
-    showSlide(currentIndex);
+    setupNavigation(prevButton, nextButton, container, slides);
 });
