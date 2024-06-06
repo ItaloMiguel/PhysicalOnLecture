@@ -1,5 +1,2 @@
-import searchBar from "./searchBar.js";
+import carousel from "./carousel/carousel.js";
 
-
-
-const containerMain = document.getElementById('container-main');
