@@ -9,41 +9,48 @@
     <link rel="stylesheet" href="./css/carousel.css">
 </head>
 <body>
-    <header>
-        <div>
+    <div class="container">
+        <div class="main-header">
             <div class="header-left">
-                <ul>
-                    <li>
-                        <button>
-                            <span>Explore</span>
-                        </button>
-                    </li>
-                </ul>
-                <form role="search" id="formSearch">
-                    <label for="searched">Search</label>
-                    <input type="search" id="searched" name="searched" placeholder="Search...">
-                </form>
+                <div class="explore-container">
+                    <ul>
+                        <li>
+                            <button>
+                                <span>Explore</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <form role="search" id="formSearch">
+                        <label for="searched">Search</label>
+                        <input type="search" id="searched" name="searched" placeholder="Search...">
+                    </form>
+                </div>
             </div>
             <div class="header-right">
+                texto qualquer
             </div>
         </div>
-    </header>
+    
 
-    <section class="presentation-banner">
-        <div id="carousel-container">
-            <button id="prevBtn">&#10094;</button>
-            <div id="carousel-slides"></div>
-            <button id="nextBtn">&#10095;</button>
+        <div class="presentation-banner">
+            <div class="carousel-container" id="carousel-container">
+                <button class="prevBtn" id="prevBtn">&#10094;</button>
+                <div class="carousel-slides" id="carousel-slides"></div>
+                <button class="nextBtn" id="nextBtn">&#10095;</button>
+            </div>
         </div>
-    </section>
-
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
+    
+        <div class="main-container">
+            texto qualquer
+        </div>
+    
+        <div class="main-footer">
+            texto qualquer
+        </div>
+    </div>
+    
 
     <script type="module" src="./js/main.js"></script>
 </body>

@@ -1,11 +1,12 @@
-/* styles.css */
-#carousel-container {
+.carousel-container {
     position: relative;
-    width: 100%;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(230, 88, 88);
 }
 
-#carousel-slides {
+.carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -16,7 +17,7 @@
     padding: 20px;
 }
 
-#prevBtn, #nextBtn {
+.prevBtn, .nextBtn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -27,10 +28,10 @@
     cursor: pointer;
 }
 
-#prevBtn {
+.prevBtn {
     left: 0;
 }
 
-#nextBtn {
+.nextBtn {
     right: 0;
 }

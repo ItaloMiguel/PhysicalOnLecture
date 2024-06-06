@@ -1,0 +1,38 @@
+.container {
+
+    /* Centralizar todas divs */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Coloração */
+    background-color: gray;
+}
+
+.main-header, .main-container, .main-footer, .presentation-banner {
+    width: 80vw;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-left {
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+
+.header-right {
+    background-color: brown;
+}
+
+.presentation-banner {
+    background-color: antiquewhite;
+}
+
+.main-container {
+    background-color: antiquewhite;
+}
